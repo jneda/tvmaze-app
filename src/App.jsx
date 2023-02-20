@@ -14,17 +14,19 @@ import "./App.css";
 
 function App() {
   const [shows, setShows] = useState([]);
+  const [query, setQuery] = useState("");
 
   async function onSearch(query) {
+    setQuery(query);
     const results = await getShows(query);
-    setShows(results.shows);
+    setShows(results);
   }
 
   return (
     <div className="App">
       <Title title={"Bonjour tout le monde ! 📺"} />
       <Searchbar onSearch={onSearch} />
-      {shows.length === 0 ? <RickRoll/> : <Results results={shows} />}
+      {shows.length === 0 ? <RickRoll/> : <Results results={shows} query={query} />}
     </div>
   );
 }

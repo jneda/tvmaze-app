@@ -1,10 +1,14 @@
 import ShowInfo from "./ShowInfo";
 
 export default function Results(props) {
-  const results = props.results.map((result) => (
+  const { length, shows } = props.results;
+  const results = shows.map((show) => (
     // <pre key={result.id}>{JSON.stringify(result)}</pre>
-    <ShowInfo data={result} />
+    <ShowInfo data={show} />
   ));
 
-  return <div>{results}</div>;
+  return <div>
+    <h1>{length} résultat{length > 1 ? "s" : ""} pour &laquo; {props.query} &raquo;</h1>
+    {results}
+    </div>;
 }
