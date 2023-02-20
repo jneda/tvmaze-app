@@ -1,14 +1,10 @@
 import { useState } from "react";
 
 export default function Searchbar(props) {
-  console.log(props);
   const [query, setQuery] = useState("");
-
-  console.log(query);
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(query);
     props.onSearch(query);
     setQuery("");
   }

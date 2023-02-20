@@ -17,7 +17,6 @@ function App() {
 
   async function onSearch(query) {
     const results = await getShows(query);
-    console.table(results);
     setShows(results.shows);
   }
 

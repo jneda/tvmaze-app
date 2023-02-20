@@ -11,6 +11,10 @@ img {
   object-fit: cover;
 }
 
+article img {
+  max-width: 20rem;
+}
+
 form {
   display: flex;
   justify-content: center;
