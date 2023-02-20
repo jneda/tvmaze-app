@@ -7,4 +7,24 @@
 
 img {
   border-radius: 8px;
+  width: 100%;
+  object-fit: cover;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="search"] {
+  padding: 0.4rem 0.6rem;
+  font: inherit;
+  margin: 1rem auto;
+  flex-grow: 1;
+}
+
+pre {
+  width: 100%;
+  white-space: pre-wrap;
 }
