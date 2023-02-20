@@ -26,7 +26,11 @@ function App() {
     <div className="App">
       <Title title={"Bonjour tout le monde ! 📺"} />
       <Searchbar onSearch={onSearch} />
-      {shows.length === 0 ? <RickRoll/> : <Results results={shows} query={query} />}
+      {shows.length === 0 ? (
+        <RickRoll />
+      ) : (
+        <Results results={shows} query={query} />
+      )}
     </div>
   );
 }
