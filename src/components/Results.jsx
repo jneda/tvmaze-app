@@ -4,7 +4,7 @@ export default function Results(props) {
   const { length, shows } = props.results;
   const results = shows.map((show) => (
     // <pre key={result.id}>{JSON.stringify(result)}</pre>
-    <ShowInfo data={show} />
+    <ShowInfo key={show.show.id} data={show} />
   ));
 
   return <div>
