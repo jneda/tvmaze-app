@@ -11,7 +11,6 @@ export default function ShowInfo(props) {
 
   return (
     <article className="searchResult">
-      {/* {imageUrl ? <img src={imageUrl} alt={name} /> : <div className="imagePlaceholder"></div>} */}
       <img src={imageUrl} alt={name} />
       <div className="showInfo">
         <h2>{name}</h2>

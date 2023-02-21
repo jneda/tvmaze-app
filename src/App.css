@@ -52,7 +52,7 @@ article img {
   max-width: 100px;
   height: 100%;
   min-height: 8rem;
-  line-height: 8rem;
+  /* line-height: 8rem; */
 }
 
 .searchResult .showInfo {
