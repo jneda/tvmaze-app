@@ -11,7 +11,7 @@ export default function ShowDetails(props) {
 
   return (
     <div className="showPage">
-      <image src={show.image ? show.image.original : ""} alt={show.name} />
+      <img src={show.image ? show.image.original : ""} alt={show.name} />
       <h1>{show.name}</h1>
       <p>Type: {show.type}</p>
       <p>Genre: {show.genres.join(", ")}</p>
