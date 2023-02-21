@@ -12,3 +12,11 @@ export async function getShows(query) {
 
   return results;
 }
+
+export async function getShowById(id) {
+  const url = `${baseUrl}/shows/${id}?embed=cast`;
+  const response = await fetch(url);
+  const show = await response.json();
+
+  return show;
+}

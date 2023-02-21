@@ -44,7 +44,15 @@ article img {
   filter: brightness(1);
 }
 
-.searchResult + .searchResult {
+.results a {
+  font: inherit;
+  color: rgba(255, 255, 255, 0.87);
+  text-decoration: inherit;
+  display: block;
+}
+
+.results a + a {
+  
   margin-top: 1rem;
 }
 
@@ -64,4 +72,5 @@ article img {
 pre {
   width: 100%;
   white-space: pre-wrap;
+  text-align: left;
 }
