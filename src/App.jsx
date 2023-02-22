@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Title title={"Bonjour tout le monde ! 📺"} />
+      {/* <Title title={"Bonjour tout le monde ! 📺"} /> */}
       <Searchbar onSearch={onSearch} />
       {shows.length === 0 ? (
         <RickRoll />
