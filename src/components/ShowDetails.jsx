@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import DOMPurify from "dompurify";
 import parse from "html-react-parser";
@@ -7,6 +7,7 @@ import "./ShowDetails.css";
 
 export default function ShowDetails(props) {
   const { show, cast } = props;
+  const navigate = useNavigate();
 
   const sanitizedSummary = DOMPurify.sanitize(show.summary);
   const summaryElement = parse(sanitizedSummary);
@@ -38,7 +39,7 @@ export default function ShowDetails(props) {
           })}
         </ul>
       </p>
-      <Link to={"/"}>&larr; Back</Link>
+      <button onClick={() => navigate(-1)}>&larr; Back</button>
     </div>
   );
 }
