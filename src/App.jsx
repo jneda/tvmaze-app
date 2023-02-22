@@ -11,6 +11,7 @@ import Title from "./components/Title";
 
 // css
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   const [shows, setShows] = useState([]);
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Title title={"Bonjour tout le monde ! 📺"} />
       <Searchbar onSearch={onSearch} />
       {shows.length === 0 ? (

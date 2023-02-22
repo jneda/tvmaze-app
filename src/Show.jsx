@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import { getShowById } from "./lib/tmazeApi";
 
+import Header from "./components/Header";
 import ShowDetails from "./components/ShowDetails";
 
 import "./Show.css";
@@ -17,7 +18,10 @@ export default function Show() {
   } = show;
 
   return (
-    <ShowDetails show={show} cast={cast} />
+    <>
+      <Header />
+      <ShowDetails show={show} cast={cast} />
+    </>
     // <pre>{JSON.stringify(show, null, 2)}</pre>
   );
 }

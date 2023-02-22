@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Show, { loader as showLoader } from "./Show";
+import Person, { loader as personLoader } from "./Person";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -14,6 +15,11 @@ const router = createBrowserRouter([
     path: "/show/:id",
     element: <Show />,
     loader: showLoader,
+  },
+  {
+    path: "/person/:id",
+    element: <Person />,
+    loader: personLoader,
   },
 ]);
 
