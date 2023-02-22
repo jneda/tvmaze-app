@@ -8,6 +8,7 @@ import Results from "./components/Results";
 import RickRoll from "./components/RickRoll";
 import Searchbar from "./components/Searchbar";
 import Title from "./components/Title";
+import Footer from "./components/Footer";
 
 // css
 import "./App.css";
@@ -33,6 +34,7 @@ function App() {
       ) : (
         <Results results={shows} query={query} />
       )}
+      <Footer />
     </div>
   );
 }
