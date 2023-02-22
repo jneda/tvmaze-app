@@ -7,12 +7,20 @@
   margin-top: 1rem;;
 }
 
+.showPage ul {
+  padding: 0;
+}
+
+.showPage ul > * {
+  margin-top: 1rem;
+}
+
+.showPage li {
+  list-style-type: none;
+}
+
 .showPage a {
   text-decoration: none;
   color: inherit;
-  font-weight: bold;
-  font-size: 1.4rem;
-  border: 1px solid var(--primary-color);
-  padding: 0.2rem  0.8rem;
-  border-radius: 8px;
+  /* padding: 0.2rem  0.8rem; */
 }

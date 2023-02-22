@@ -1,0 +1,31 @@
+.personDetails {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: var(--secondary-bg-color);
+  filter: brightness(0.9);
+}
+
+.personDetails:hover {
+  filter: brightness(1);
+}
+
+.personDetails img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+.personDetails .infos {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.personDetails .person {
+  font-weight: bold;
+}
+
+.personDetails .character {
+  font-weight: normal;
+  font-style: italic;
+}
